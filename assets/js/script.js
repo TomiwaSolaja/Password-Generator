@@ -63,10 +63,15 @@ function generatePassword(){
     finalpass=finalpass + getrandnumbers().toString()
 
   }
+  if (l==="no" && u==="no" && s==="no" && n==="no"){
+    window.alert("Invalid, No characters selected try again");
+    return null
+  }
+
   for (let i=finalpass.length; i<passlen ; i++){
     finalpass= finalpass + fullarr[Math.floor(Math.random()*fullarr.length)]
   }
-  return finalpass
+    return finalpass
 }
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
