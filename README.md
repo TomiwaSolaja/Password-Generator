@@ -1,2 +1,1 @@
-# Password-Generator
-Creates a random 8-12 character password
+# Password Generator Starter Code
